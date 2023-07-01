@@ -1,0 +1,7 @@
+contact_book = input().split()
+contact_find = input()
+
+for contact in contact_book:
+    if contact_find in contact:
+        name_phone = contact.split(',')
+        print(name_phone[1])
