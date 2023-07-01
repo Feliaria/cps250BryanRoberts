@@ -1,0 +1,14 @@
+highway_number = int(input())
+
+if highway_number % 2 == 0:  # The highway number is even
+    if highway_number % 100 == 0:  # The highway number is a multiple of 100
+        print(f'{highway_number} is not a valid interstate highway number.')
+    elif highway_number // 100 == 0:  # The highway number is less than 100
+        print(f'I-{highway_number} is primary, going east/west.')
+    else:  # The highway number is greater than 100
+        print(f'I-{highway_number} is auxiliary, serving I-{highway_number % 100}, going east/west.')
+else:  # The highway number is odd
+    if highway_number // 100 == 0:  # The highway number is less than 100
+        print(f'I-{highway_number} is primary, going north/south.')
+    else:  # The highway number is greater than 100
+        print(f'I-{highway_number} is auxiliary, serving I-{highway_number % 100}, going north/south.')    
