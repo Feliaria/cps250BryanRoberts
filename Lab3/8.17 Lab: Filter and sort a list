@@ -1,0 +1,14 @@
+list_of_ints = input().split()
+list_of_negs = []
+
+for s in list_of_ints:
+    i = int(s)
+    if i < 0:
+        list_of_negs.append(i)
+    
+list_of_negs.sort()
+
+list_of_negs.reverse()
+
+for i in list_of_negs:
+    print(i, end=' ')
