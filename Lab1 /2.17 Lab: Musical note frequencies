@@ -1,0 +1,9 @@
+''' Type your code here. '''
+
+f0 = int(input())
+r = 2**(1/12)
+
+print(f'{f0:.2f} Hz')
+print(f'{f0*(r**1):.2f} Hz')
+print(f'{f0*(r**2):.2f} Hz')
+print(f'{f0*(r**3):.2f} Hz')
