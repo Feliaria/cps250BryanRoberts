@@ -1,0 +1,10 @@
+string = str(input())
+
+string_no_whitespace = string[:].replace(' ','')
+
+reverse_string = string_no_whitespace[::-1]
+
+if reverse_string == string_no_whitespace:
+    print(f'palindrome: {string}')
+else:
+    print(f'not a palindrome: {string}')
