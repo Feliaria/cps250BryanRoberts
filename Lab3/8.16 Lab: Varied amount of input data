@@ -1,0 +1,10 @@
+input_numbers = input()
+input_numbers = input_numbers.split()
+
+numbers = []
+
+for number in input_numbers:
+    numbers.append(float(number))
+
+output = numbers.sort()
+print(f'{numbers[-1]:.2f} {sum(numbers) / len(numbers):.2f}')
