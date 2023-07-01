@@ -1,0 +1,13 @@
+num_of_points = int(input())
+num_data = 0
+data_dict = {}
+
+while num_data < num_of_points:
+    data_dict[float(input())] = (1+num_data)
+    num_data += 1
+
+max_value = sorted(data_dict)[-1]
+data = data_dict.keys()
+
+for data_point in data:
+    print(f'{data_point / max_value:.2f}')
