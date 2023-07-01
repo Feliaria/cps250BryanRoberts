@@ -1,0 +1,13 @@
+string = input().split(' ', 1)
+character = string[0]
+phrase = string[1]
+char_count = 0
+
+for letter in phrase:
+    if letter == character:
+        char_count += 1
+
+if char_count == 1:
+    print(f"{char_count} {character}")
+else:
+    print(f"{char_count} {character}'s")
