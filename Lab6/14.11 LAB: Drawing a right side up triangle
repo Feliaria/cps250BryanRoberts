@@ -1,0 +1,16 @@
+# TODO: Write recursive draw_triangle() function here.
+def draw_triangle(base_length):
+    if base_length == 1:
+        print(f"{'*':>10}")
+    else:
+        draw_triangle(base_length-2)
+        str_length = int(19-((19-base_length)/2)) # 3 dots str len = 11, 5 dots str len = 12. When base_length is 17,
+        # print(str_length)
+        # print(f'{{base_length*'*'}:>{str_length}}')
+        string_to_print = '*' * base_length
+        # print(string_to_print)
+        print(f'{string_to_print:>{str_length}}')
+
+if __name__ == '__main__':
+    base_length = int(input())
+    draw_triangle(base_length)
