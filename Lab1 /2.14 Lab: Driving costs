@@ -1,0 +1,5 @@
+miles_per_gallon = float(input())
+price_per_gallon = float(input())
+price_per_mile = price_per_gallon/miles_per_gallon
+
+print(f'{20*price_per_mile:.2f} {75*price_per_mile:.2f} {500*price_per_mile:.2f}')
