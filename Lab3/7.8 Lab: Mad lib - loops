@@ -1,0 +1,10 @@
+mad_lib_inputs = input().split()
+number = mad_lib_inputs[1]
+item = mad_lib_inputs[0]
+
+
+while item != 'quit':
+    print(f'Eating {number} {item} a day keeps you happy and healthy.')
+    mad_lib_inputs = input().split()
+    number = mad_lib_inputs[1]
+    item = mad_lib_inputs[0]
