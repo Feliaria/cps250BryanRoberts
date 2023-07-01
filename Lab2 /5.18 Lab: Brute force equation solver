@@ -1,0 +1,21 @@
+''' Read in first equation, ax + by = c '''
+a = int(input())
+b = int(input())
+c = int(input())
+
+''' Read in second equation, dx + ey = f '''
+d = int(input())
+e = int(input())
+f = int(input())
+
+''' Type your code here. '''
+break_link = False
+for x in range(-10, 11):  # check values of y from -10 to 10
+    for y in range(-10, 11):  # check values of x from -10 to 10
+        # if break_link:
+        #     break
+        c_current = a*x + b*y
+        f_current = d*x + e*y
+        if c_current == c and f_current == f:
+            print(f'x = {x} , y = {y}')
+            # break_link = True
