@@ -1,0 +1,10 @@
+list_of_ints = input().split()
+list_of_ranges = input().split()
+
+lower = int(list_of_ranges[0])
+upper = int(list_of_ranges[1])
+
+for s in list_of_ints:
+    i = int(s)
+    if lower <= i <= upper:
+        print(i, end=',')
