@@ -1,0 +1,14 @@
+''' Type your code here. '''
+par_count = int(input())
+strokes = int(input())
+
+if par_count < 3 or par_count > 5:
+    print('Error')
+elif strokes + 2 == par_count:
+    print('Eagle')
+elif strokes + 1 == par_count:
+    print('Birdie')
+elif strokes == par_count:
+    print('Par')
+elif strokes -1 == par_count:
+    print('Bogey')
