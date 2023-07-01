@@ -1,0 +1,17 @@
+def int_to_reverse_binary(integer_value):
+    list_of_reverse = []
+    while integer_value > 0:
+        list_of_reverse.append(str(integer_value % 2))
+        integer_value = integer_value // 2
+        
+    reverse = ''.join(list_of_reverse)
+    return reverse
+    
+def string_reverse(input_string):
+    input_string
+    binary = input_string[::-1]
+    return binary
+
+if __name__ == '__main__':
+    reverse_binary = int_to_reverse_binary(int(input()))
+    print(string_reverse(reverse_binary))
